@@ -101,7 +101,7 @@ public class LBTree<T> implements IBinaryTree<T>{
 	@Override
 	public IBNode<T> addRoot(T e) throws Exception {
 		IBNode<T> n = new IBNode<T>(e);
-		if(!isEmpty()) {
+		if(isEmpty()) {
 			root = n;
 			return root;
 		}
